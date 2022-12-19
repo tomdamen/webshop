@@ -31,7 +31,10 @@
         },
         "files": [
             "app/components/header.php",
-            "app/components/footer.php"
+            "app/components/footer.php",
+            "app/components/thumbnail.php",
+            "app/components/classes/Product.php",
+            "app/components/bigProduct.php"
         ]
     },
     "autoload-dev": {

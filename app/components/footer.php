@@ -3,6 +3,6 @@
 
 function makeFooter() : string {
 
-    return "<footer>Footer</footer>";
+    return "<footer>&copy;2022 CapTrack Ltd Holding</footer>";
 
 }

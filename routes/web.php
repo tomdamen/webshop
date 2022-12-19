@@ -32,3 +32,11 @@ Route::get('/catalogue', function () {
 Route::get('/product', function () {
     return view('product');
 });
+
+Route::get('/shoppingcart', function () {
+    return view('shoppingcart');
+});
+
+Route::get('/product', function () {
+    return view('product');
+});

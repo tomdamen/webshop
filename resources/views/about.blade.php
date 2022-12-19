@@ -15,9 +15,17 @@
     <div class="container">
         <?= makeHeader() ?>
         <div class="content">
-            <p>Test for content</p>
-            <h2>About!</h2>
-            <p>Dit is de about pagina</p>
+            <div class="grid2columns">
+                <div class="gridLeft">
+                    <p>Niets is zo irritant als kapotte muziekinstrumenten. Daarom kun je hier vervangende producten bestellen.</p>
+
+                </div>
+                <div class="gridRight">
+                    <p>Contactinformatie:</p>
+                    <p>Tom Damen</p>
+                    <p>CapTrack gebouw</p>
+                </div>
+            </div>
         </div>
 
         <?= makeFooter() ?>

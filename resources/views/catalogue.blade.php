@@ -12,8 +12,19 @@
         <?= makeHeader() ?>
 
         <div class="content">
-            <p>Test for content</p>
 
+            <div class="productsGrid">
+
+                <?= thumbnail(1,300) ?>
+                <?= thumbnail(1,300) ?>
+                <?= thumbnail(1,300) ?>
+                <?= thumbnail(1,300) ?>
+                <?= thumbnail(1,300) ?>
+                <?= thumbnail(1,300) ?>
+                <?= thumbnail(1,300) ?>
+                <?= thumbnail(1,300) ?>
+                <?= thumbnail(1,300) ?>
+            </div>
         </div>
 
         <?= makeFooter() ?>

@@ -1,6 +1,4 @@
-<?php 
-// require_once('../app/components/header.php');
-?>
+
 
 
 <!DOCTYPE html>
@@ -16,7 +14,18 @@
     <div class="container">
         <?= makeHeader() ?>
         <div class="content">
-            <p>Dit is de home page</p>
+            <div class="welcome">
+                <h1>Welkom bij trom.com!</h1>
+                <p>De plek voor allerhande drumspullen.</p>
+
+                <p>Een greep uit ons assortiment:</p>
+            </div>
+            <div class="caroussel">
+                <?= thumbnail(1,250) ?>
+                <?= thumbnail(1,250) ?>
+                <?= thumbnail(1,250) ?>
+                <?= thumbnail(1,250) ?>
+            </div>
         </div>
 
         <?= makeFooter() ?>
