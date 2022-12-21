@@ -3,14 +3,16 @@
 @section('content')
 <div class="productsGrid">
 
-    <?= thumbnail(1,300) ?>
-    <?= thumbnail(2,300) ?>
-    <?= thumbnail(1,300) ?>
-    <?= thumbnail(2,300) ?>
-    <?= thumbnail(1,300) ?>
-    <?= thumbnail(2,300) ?>
-    <?= thumbnail(1,300) ?>
-    <?= thumbnail(1,300) ?>
-    <?= thumbnail(1,300) ?>
+<?= print_r(makeData()); ?>
+
+    <?= thumbnail(1,300,makeData()) ?>
+    <?= thumbnail(2,300,makeData()) ?>
+    <?= thumbnail(1,300,makeData()) ?>
+    <?= thumbnail(2,300,makeData()) ?>
+    <?= thumbnail(1,300,makeData()) ?>
+    <?= thumbnail(1,300,makeData()) ?>
+    <?= thumbnail(1,300,makeData()) ?>
+    <?= thumbnail(2,300,makeData()) ?>
+    <?= thumbnail(1,300,makeData()) ?>
 </div>
 @endsection
