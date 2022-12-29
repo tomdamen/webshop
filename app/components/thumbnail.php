@@ -12,9 +12,8 @@ function thumbnail(int $id,int $size,array $data) : string {
     $returnString = '<div class="product" style="width: ' . $size . 'px; height= ' . $size . 'px;"><a href="product">
                 <img src=' . asset("images/products/" . $product->getImagePath() . ".png") . ' alt="drumkey">
                 <p class="description">
-                    ' . $product->getName() . '<br />
-                    ' . $product->getDescription() . ' 
-                </p>
+                    ' . $product->getName() . 
+                '</p>
                 <p class="price">
                     &euro;' . $product->getPrice() . '
                 </p>
