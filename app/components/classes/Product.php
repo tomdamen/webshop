@@ -10,11 +10,10 @@ class Product {
     public $description;
     public $price;
     public $stock;
-    public $properties;
 
 
 
-    public function __construct($id, $name, $imagePath, $description, $price, $stock, $properties) {
+    public function __construct($id, $name, $imagePath, $description, $price, $stock) {
 
         $this->id = $id;
         $this->name = $name;
@@ -22,7 +21,6 @@ class Product {
         $this->description = $description;
         $this->price = $price;
         $this->stock = $stock;
-        $this->properties = $properties;
 
     }
 
@@ -52,10 +50,7 @@ class Product {
     function getStock() {
         return $this->stock;
     }
-    
-    function getProperties() {
-        return $this->properties;
-    }
+
 
 
 

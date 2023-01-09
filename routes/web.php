@@ -27,7 +27,7 @@ Route::get('/about', [AboutController::class, 'show']);
 
 Route::get('/catalogue', [CatalogueController::class, 'show']);
 
-Route::get('/product', [ProductController::class, 'show']);
+Route::get('/product/{id}', [ProductController::class, 'show']);
 
 Route::get('/shoppingcart', [ShoppingcartController::class, 'show']);
 

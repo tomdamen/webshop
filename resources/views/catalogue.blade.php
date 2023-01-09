@@ -5,14 +5,13 @@
 
 <?= print_r(makeData()); ?>
 
-    <?= thumbnail(1,300,makeData()) ?>
-    <?= thumbnail(2,300,makeData()) ?>
-    <?= thumbnail(1,300,makeData()) ?>
-    <?= thumbnail(2,300,makeData()) ?>
-    <?= thumbnail(1,300,makeData()) ?>
-    <?= thumbnail(1,300,makeData()) ?>
-    <?= thumbnail(1,300,makeData()) ?>
-    <?= thumbnail(2,300,makeData()) ?>
-    <?= thumbnail(1,300,makeData()) ?>
+    <?= thumbnail(1,300) ?>
+    <?= thumbnail(3,300) ?>
+    <?= thumbnail(1,300) ?>
+    <?= thumbnail(3,300) ?>    
+    <?= thumbnail(1,300) ?>
+    <?= thumbnail(3,300) ?>    
+    <?= thumbnail(1,300) ?>
+    <?= thumbnail(3,300) ?>
 </div>
 @endsection

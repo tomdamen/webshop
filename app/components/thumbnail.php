@@ -1,15 +1,23 @@
 <?php
 
-function thumbnail(int $id,int $size,array $data) : string {
+use App\Models\Products;
+
+function thumbnail(int $id,int $size) : string {
 
     // TODO Ophalen id uit database
     // TODO Dynamisch invullen $product
 
 
 
-    $product = new Product($id, $data[$id-1]["title"], $data[$id-1]["title"], "this is an awesome drum key", 2.99, 15, array("material"=>"steel","weight"=>"250gr"));
+    $product = new Product(
+        $id, 
+        Products::where('id', $id)->value('title'), 
+        Products::where('id', $id)->value('title'), 
+        Products::where('id', $id)->value('description'), 
+        Products::where('id', $id)->value('price'), 
+        Products::where('id', $id)->value('stock'));
 
-    $returnString = '<div class="product" style="width: ' . $size . 'px; height= ' . $size . 'px;"><a href="product">
+    $returnString = '<div class="product" style="width: ' . $size . 'px; height= ' . $size . 'px;"><a href="product/' . $id . '">
                 <img src=' . asset("images/products/" . $product->getImagePath() . ".png") . ' alt="drumkey">
                 <p class="description">
                     ' . $product->getName() . 

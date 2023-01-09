@@ -2,7 +2,9 @@
 
 @section('content')
 
-{{-- TODO query naar database voor ophalen product --}}
+
+
+{{-- TODO add JavaScript to increase/decrese product counter --}}
 
 
 
@@ -10,16 +12,16 @@
 
 <p>Number added: <?php if(isset($_POST["currentNumber"])) echo $_POST["currentNumber"] ?></p>
     
-<p>This is te product page of  {{ $product }}</p>
+<p>This is te product page of  {{ $product["title"] }}</p>
 
 <div class="productContainer">
     <div class="bigProductImage">
-        <img src='{{asset('images/products/' . $product . '.png')}}' alt="drumkey">
+        <img src='{{asset('images/products/' . $product["title"] . '.png')}}' alt="drumkey">
     </div>
     <div class="productInformation">
-        <div class="productName">{{$product}}</div>
-        <div class="productDescription">{{$description}}</div>
-        <form action="product" method="POST" class="addToCartSelector">
+        <div class="productName">{{$product["title"]}}</div>
+        <div class="productDescription">{{$product["description"]}}</div>
+        <form action="./" method="POST" class="addToCartSelector">
             <div class="addToCartSelectorQuantity">
                 <span id="reduceNumber">-</span>
                 <input type="number" value="0" id="currentNumber" name="currentNumber">
