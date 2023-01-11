@@ -21,7 +21,10 @@
     <div class="productInformation">
         <div class="productName">{{$product["title"]}}</div>
         <div class="productDescription">{{$product["description"]}}</div>
-        <form action="./" method="POST" class="addToCartSelector">
+        
+        
+        <form method="POST" action="/shoppingcart/add" class="addToCartSelector">
+            @csrf;
             <div class="addToCartSelectorQuantity">
                 <span id="reduceNumber">-</span>
                 <input type="number" value="0" id="currentNumber" name="currentNumber">

@@ -31,4 +31,6 @@ Route::get('/product/{id}', [ProductController::class, 'show']);
 
 Route::get('/shoppingcart', [ShoppingcartController::class, 'show']);
 
+Route::post('/shoppingcart/add', [ShoppingcartController::class, 'add']);
+
 

@@ -5,6 +5,11 @@ use App\Models\Cart;
 use App\Models\CartsProducts;
 
 class ShoppingcartController extends Controller {
+
+    public function add() {
+        return redirect('/shoppingcart');
+    }
+
     public function show() {
         $cart = Cart::where("user_id", 1)->get();
         $products = CartsProducts::where("user_id", 1)->get();
